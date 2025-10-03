@@ -6,8 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <input type="text" id="add" class="add">
-        <button id="btn"> <label for="add">Add</label> </button></div>
+
+    <form action="POST" id="bookform">
+        <label for="Title">Title:</label>
+        <input type="text" id="Title" class="add" placeholder="Title" required>
+        <label for="Auth">Author:</label>
+        <input type="text" id="Auth" class="add" placeholder="Author" required>
+        <label for="pub">Published:</label> 
+        <input type="text" id="pub" class="add" placeholder="Published" required>
+        <button id="btn" type="submit"> <label for="add">Add</label> </button>
+    </form>
+
+   <div class="screen"></div>
+
+        <script src="Java.js"></script>
 </body>
 </html>
