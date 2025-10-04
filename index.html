@@ -4,21 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container"> <!--contianer for whole -->
+    <div class="sidebar"> <!-- the side bar its for background color-->
+      <div class="side"> <!--This is for extra layer of sidebar which grows when you big the screen-->
+      <div class="col"> <!-- this was to set the whole icons in column as col-->
+          <div class="head">
 
-    <form action="POST" id="bookform">
-        <label for="Title">Title:</label>
+            <!-- its here is main heading with icon -->
+            <div ><img class="img" src="images/Dash.svg" alt=""></div>
+            <div><h1>Options</h1></div>
+            <!-- here its till -->
+
+
+     <!-- these are icons right after the dahsboard heading -->
+        </div>
+       <div class="icon">
+         <div class="icons">
+            <div> <img class="img" src="images/home.svg" alt=""></div>
+            <div><h2><button class="btn bt">Add Book</button></h2></div>
+         </div>
+
+ <div class="icons">
+              <div> <img class="img" src="images/cogs.svg" alt=""></div>
+            <div><h2><button class="btn">Settings</button></h2>
+        </div></div>
+    
+          <div class="icons">
+              <div> <img class="img" src="images/safe.svg" alt=""></div>
+            <div><h2><button class="btn">Privacy</button></h2>
+        </div>
+
+       </div>
+
+
+<!-- till here they are just icons  -->
+        </div>
+    </div>
+    </div>  
+</div>
+<div class="main">
+    <div class="header">
+    <h1 class="str">Library</h1>
+
+    </div>
+<!-- this here is just footer or books -->
+    <div class="footer">
+        <div class="project"> 
+            <h5>Your Projects</h5>
+          <div class="cards">
+          
+          </div>
+     
+        </div>
+
+    </div>
+</div>
+<div id="Popup" class="hidden">
+  <form action="POST" id="bookform">
+        <div class="PopUpForm">
+       <div class="field">
+             <label for="Title">Title:</label>
         <input type="text" id="Title" class="add" placeholder="Title" required>
-        <label for="Auth">Author:</label>
+       </div>
+     <div class="field">
+             <label for="Auth">Author:</label>
         <input type="text" id="Auth" class="add" placeholder="Author" required>
-        <label for="pub">Published:</label> 
-        <input type="text" id="pub" class="add" placeholder="Published" required>
-        <button id="btn" type="submit"> <label for="add">Add</label> </button>
+     </div>
+     <div class="field">
+         <label for="pub">Published:</label> 
+        <input type="number" id="pub" class="add" placeholder="Published" required>
+     </div>
+        <button id="btn" class="st" type="submit"> <label for="add">Add</label> </button>
+        </div>
     </form>
-
-   <div class="screen"></div>
-
-        <script src="Java.js"></script>
+</div>
+<script src="Java.js"></script>
 </body>
 </html>

@@ -4,7 +4,19 @@ let form = document.querySelector("#bookform");
 
 let get = document.querySelectorAll(".add");
 
-let scr = document.querySelector(".screen");
+let scr = document.querySelector(".cards");
+
+let App = document.getElementById("Popup");
+
+let btn = document.querySelector(".bt");
+
+let st = document.querySelector("#btn");
+
+btn.addEventListener("click", ()=> {
+    App.classList.remove("hidden");
+})
+
+
 
 form.addEventListener("submit", (e)=> {
 
@@ -25,6 +37,12 @@ form.addEventListener("submit", (e)=> {
 
 });
 
+st.addEventListener("click", ()=>{
+    
+App.classList.add("hidden");
+})
+
+
 
 function Books(Name, Author , published , id){
  this.Name = Name;
@@ -39,16 +57,17 @@ Lib.push(NewBook);
 
 
     let CreBook = document.createElement("div");
+    CreBook.classList.add("card");
 
 let Ti = document.createElement("div");
 let Au = document.createElement("div");
 let Pu = document.createElement("div");
 let IDA = document.createElement("div");
 
-Ti.textContent = `Title:${NewBook.Name}`;
-Au.textContent = `Author:${NewBook.Author}`;
-Pu.textContent = `Published:${NewBook.published}`;
-IDA.textContent = `ID:${NewBook.id}`;
+Ti.innerHTML = `<strong>Title:</strong>  ${NewBook.Name}`;
+Au.innerHTML = `<strong>Author:</strong>  ${NewBook.Author}`;
+Pu.innerHTML = `<strong>Published:</strong>  ${NewBook.published}`;
+IDA.innerHTML = `<strong>ID:</strong>  ${NewBook.id}`;
 
 CreBook.appendChild(Ti);
 CreBook.appendChild(Au);
@@ -59,8 +78,13 @@ scr.appendChild(CreBook);
 
 get.forEach(input => input.value = '');
 
+
 }
 
 
-
-
+AdToLib('Mystic', 'shadow', '1978');
+AdToLib('Echoes of Dawn', 'Arlen Frost', '1991');
+AdToLib('Silent Horizon', 'Mira Solis', '2003');
+AdToLib('Crimson Quill', 'Dorian Vale', '1987');
+AdToLib('Twilight Loom', 'Selene Hart', '2015');
+AdToLib('Forgotten Spire', 'Lysander Crowe', '1972');

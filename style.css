@@ -1,0 +1,297 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    text-align: center;
+}
+
+.sidebar{
+    background-color: skyblue;
+    color: white;
+}
+
+.img{
+    height: 50px;
+}
+
+.head{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.side{
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr minmax(30px,2fr);
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.icons{
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+}
+
+.icons .img{
+    height: 30px;
+}
+
+.icon{
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+}
+
+
+.header{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.main{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+input{
+    color: white;
+    width: clamp(260px,40vw,1100px);
+    border-radius:12px;
+    border: transparent;
+    background-color: rgba(128, 128, 128, 0.2);
+    height: clamp(14px,5vh,20px);
+}
+
+
+
+.fir .img{
+    height: 25px;
+}
+
+.fir{
+    gap: 15px;
+    padding-left: 50px;
+    display: flex;
+}
+
+.ring{
+    justify-self: self-end;
+    padding: clamp((0,20px),60vw,(0,200px));
+    display: flex;
+    align-content: center;
+}
+
+.ring .img{
+    margin-right: 1;
+    padding: 25px;
+    height: 25px;
+}
+
+.ring .im{
+    padding: 10px;
+    border-radius: 50%/50%;
+    height: 50px;
+    width: 40px;
+}
+
+.he{
+    margin-left:1em;
+    margin-right: 4rem;
+}
+
+.name .im{
+    height: 100px;
+    border-radius: 50%/50%;
+}
+
+.name .deri{
+        justify-self: flex-start;
+    margin-left: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.deri .cen{
+        margin: 20px;
+}
+
+.cen .div{
+        margin-right: 65px;
+    margin-bottom: 10px;
+    
+}
+
+.sa{
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.side-icons{
+    display: flex;
+        gap:20px;
+  justify-self:self-end;
+    margin-right:4rem;
+}
+
+button{
+ font-family:sans-serif;
+    padding:15px 30px;
+    background-color:skyblue;
+    border-radius:20px;
+    color:white;
+    border:transparent;
+    font-size:medium;
+    font-weight: bolder;
+
+}
+
+.footer{
+    display: grid;
+
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.project h5{
+font-size: x-large;
+    justify-self: self-start;
+    margin-left: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.cards{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 35px 80px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 15px;
+    height: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    overflow: auto;
+    display: flex
+;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.project{
+    margin-right: 4.2rem;
+}
+
+
+
+.ig{
+    display: flex;
+     margin-top: 20px;
+     gap: 20px;
+}
+
+.io{
+   border-radius: 50%/50%;
+    height: 50px;
+}
+
+.iro{
+    margin: 0;
+    
+}
+
+.ir{
+    font-size: small;
+}
+
+.oro{
+    display: flex;
+    flex-direction: column;
+}
+
+.oro h3{
+    margin-top: 0;
+}
+
+
+.btn{
+        font-family: sans-serif;
+    padding: 15px 0;
+    background-color: skyblue;
+
+    color: white;
+    border: transparent;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    color: red;
+}
+
+
+#Popup{
+   position: absolute;
+   top: 20vh;
+   left: 30vw;
+   padding: 24px;
+   width: 40vw;
+   height: 50vh;
+   border-radius: 24px;
+   border: transparent solid;
+   background: rgba(0,0,0,0.8);
+   z-index: 1000;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.PopUpForm{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn{
+  align-self: normal;
+}
+
+.field{
+  display: flex;
+  gap: 15px;
+  padding: 24px;
+  flex-direction: column;
+  font-size: x-large;
+  color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.str{
+    font-size: 4rem;
+    padding-left: 0;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
