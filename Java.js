@@ -51,6 +51,16 @@ function Books(Name, Author , published , id){
  this.id = id;
 }
 
+Books.prototype.toggle = function(button){
+ this.isRead = !this.isRead;
+ if(!this.isRead){
+    button.style.backgroundColor = "red";
+ }else{
+    button.style.backgroundColor = "green";
+ }
+}
+
+
 function AdToLib(Name, Author , published){
 const NewBook = new Books(Name, Author, published, crypto.randomUUID());
 Lib.push(NewBook);
@@ -73,7 +83,14 @@ CreBook.appendChild(Ti);
 CreBook.appendChild(Au);
 CreBook.appendChild(Pu);
 CreBook.appendChild(IDA);
+ let btw = document.createElement("button");
+ btw.classList.add("btw");
+ btw.textContent = "Read";
+ btw.style.backgroundColor = "red";
 
+ btw.addEventListener("click",()=> {NewBook.toggle(btw)} );
+
+ CreBook.appendChild(btw);
 scr.appendChild(CreBook);
 
 get.forEach(input => input.value = '');

@@ -204,35 +204,6 @@ font-size: x-large;
 
 
 
-.ig{
-    display: flex;
-     margin-top: 20px;
-     gap: 20px;
-}
-
-.io{
-   border-radius: 50%/50%;
-    height: 50px;
-}
-
-.iro{
-    margin: 0;
-    
-}
-
-.ir{
-    font-size: small;
-}
-
-.oro{
-    display: flex;
-    flex-direction: column;
-}
-
-.oro h3{
-    margin-top: 0;
-}
-
 
 .btn{
         font-family: sans-serif;
@@ -294,4 +265,10 @@ font-size: x-large;
     padding-left: 0;
     margin-top: 12px;
     margin-bottom: 0;
+}
+
+
+.btw{
+        margin-top: 2.5em;
+    margin-left: 3em;
 }
